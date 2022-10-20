@@ -24,6 +24,6 @@ Users should be able to:
 
 ## Author
 
-- GitHub - booleandox(https://www.GitHub.com/booleandox)
-- Frontend Mentor - Coldyots(https://www.frontendmentor.io/profile/coldyots)
+- GitHub - [booleandox](https://www.GitHub.com/booleandox)
+- Frontend [Mentor - Coldyots](https://www.frontendmentor.io/profile/coldyots)
 - Twitter - [@booleando](https://www.twitter.com/booleando)

@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica;
+	user-select: none;
+}
+
+body {
+	background-color: rgb(44, 103, 179);
+}
+
+.upload-container {
+	margin: 100px auto;
+	width: 400px;
+	text-align: center;
+	background-color: white;
+	border-radius: 5px;
+	padding: 40px 30px;
+}
+
+.upload-container > .title {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.upload-container .description {
+	color: #777;
+}
+
+.upload-container .drag-drop {
+	border: 3px dashed #ccc;
+	border-radius: 5px;
+	padding: 40px 20px;
+	margin: 20px 0;
+	line-height: 1.5;
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+	color: #999;
+	gap: 10px;
+}
+
+.upload-container .drag-drop .icon {
+	font-size: 60px;
+	color: rgba(77, 134, 239, 0.5);
+}
+
+.upload-container .drag-drop .btn {
+	padding: 15px;
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #4d86f0;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	min-width: 200px;
+	cursor: pointer;
+}
+
+.upload-container .drag-drop .btn:hover {
+	background-color: #3c6dc0;
+}
+
+.upload-container .uploaded-files {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.upload-container .title-section {
+	text-align: left;
+	color: #777;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.upload-container .uploaded-files .file {
+	display: flex;
+	gap: 10px;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	text-align: left;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: box-shadow 0.2s ease-in-out;
+}
+
+.upload-container .uploaded-files .file:hover {
+	box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.upload-container .uploaded-files .file .title {
+	flex: 1;
+}
+
+.upload-container .uploaded-files .file .title .name {
+	display: block;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+.upload-container .uploaded-files .file .title .size {
+	color: #999;
+	font-size: 14px;
+}
+
+.upload-container .uploaded-files .file .title .progress {
+	height: 5px;
+	width: 100%;
+	background-color: #ccc;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.upload-container .uploaded-files .file .title .progress-60 {
+	height: 5px;
+	width: 60%;
+	background-color: #3c6dc0;
+}
+
+.upload-container .uploaded-files .file .actions button {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 36px;
+	font-size: 17px;
+	color: #555;
+}
+
+.upload-container .uploaded-files .file .actions button:hover {
+	background-color: rgb(230, 121, 121, 0.9);
+	color: white;	
+}

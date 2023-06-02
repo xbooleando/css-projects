@@ -1,0 +1,231 @@
+@font-face {
+	font-family: "League Spartan";
+	src: url(fonts/league-spartan-v5-latin-regular.woff);
+}
+
+@font-face {
+	font-family: "League Spartan";
+	src: url(fonts/league-spartan-v5-latin-700.woff);
+	font-weight: bold;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "League Spartan";
+	user-select: none;
+}
+
+body {
+	background-image: url(./images/bg-pattern-bottom-mobile.svg);
+	background-repeat: no-repeat;
+	background-position: 10% -30%;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	padding: 1.3rem;
+}
+
+.container__presentation-title {
+	color: hsl(300, 43%, 22%);
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+	margin: 3.3rem 0 1.7rem 0;
+}
+
+.container__presentation-paragraph {
+	text-align: center;
+	font-size: 17px;
+	padding: 0 .7rem;
+	color: hsl(303, 10%, 53%);
+}
+
+.container__certifications-group {
+	margin: 1.7rem 0;
+}
+
+.container__certifications {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-weight: bold;
+	background-color: hsl(300, 24%, 96%);
+	color: rgb(81, 31, 80);
+	line-height: 1.6rem;
+	padding: .9rem 0 .5rem 0;
+	margin-top: 1rem;
+	border-radius: 10px;
+}
+
+.container__purple {
+	margin: auto;
+	background-color: rgb(81, 31, 80);
+	padding: 2.5rem 2.5rem 2rem 2rem;
+	border-radius: 10px;
+	margin-top: 1rem;
+	color: white;
+}
+
+.container__purple__group {
+	display: flex;
+	width: 70%;
+	align-items: center;
+	margin-bottom: 1.4rem;
+}
+
+.container__purple__img {
+	border-radius: 50%;
+	width: 25%;
+	height: 25%;
+}
+
+.container__purple__group-information {
+	margin-left: 1rem;
+	font-weight: 700;
+	line-height: 1.3rem;
+}
+
+.container__purple__group-information span{
+	color: hsl(333, 80%, 67%);
+	font-weight: 400;
+}
+
+.container__purple__paragraph {
+	line-height: 1.3rem;
+	padding: .5rem;
+}
+
+@media all and (min-width: 600px) {
+
+	.container {
+		margin: auto;
+		width: 80.6%;
+		height: 100vh;
+		padding-right: .7rem;
+	}
+
+	.superior {
+		display: flex;
+		padding-top: 1.5rem;
+		justify-content: left;
+	}
+
+	.container__presentation {
+		width: 30vw;
+	}
+
+	.container__presentation-title {
+		text-align: left;
+		font-size: 37px;
+		margin-bottom: 1.27rem;
+	}
+
+	.container__presentation-paragraph {
+		text-align: left;
+		font-size: 12.7px;
+		padding: 0;
+		line-height: 1.1rem; 
+	}
+
+	.container__certifications-group {
+		padding: 2rem 0 1rem 0;
+	}
+
+	.container__certifications {
+		align-self: right;
+		flex-direction: row;
+		font-size: 12px;
+		padding: .5rem 3.5rem .3rem 0;
+		align-items: center;
+		justify-content: flex-start;
+		border-radius: 5px;
+		width: 100%;
+	}
+
+	.star {
+		width: 10.2%;
+		margin-right: .2rem;
+		margin-top: .46rem;
+	}
+
+	.container__certifications-group {
+		padding-top: 2.2rem;
+	}
+
+	.container__certifications {
+		margin-top: .63rem;
+		width: 74%;
+		padding-right: 0rem;
+		padding-left: .5rem;
+	}
+
+	.container__certifications__text {
+		margin-left: .39rem;
+		flex-wrap: nowrap;
+	}
+
+	.container__certifications:first-child {
+		margin-left: 6.1rem;
+	}
+
+	.container__certifications:nth-child(2) {
+		margin-left: 8.2rem;
+	}
+
+	.container__certifications:nth-child(3) {
+		margin-left: 10.3rem;
+	}
+
+	.inferior {
+		width: 77vw;
+		display: flex;
+		justify-content: space-between;
+		max-height: 40%;
+	}
+
+	.container__purple {
+		margin: 1.1rem 1.3rem 0 0;
+		padding: 1.5rem .9rem 2rem .9rem;
+		border-radius: 5px;
+		font-size: 12px;
+		min-height: 10.4rem;
+	}
+
+	.container__purple:nth-child(2) {
+		margin-top: 1.8rem;
+		
+	}
+
+	.container__purple:last-child {
+		margin-top: 2.5rem;
+		margin-right: 0;
+		
+	}
+
+	.container__purple__group {
+		align-items: center;
+		margin-bottom: .7rem;
+	}
+
+	.container__purple__img {
+	border-radius: 50%;
+	width: 18%;
+	height: 18%;
+	margin-left: .35rem;
+	}
+
+	.container__purple__group-information {
+	margin: .4rem .5rem 0 1rem;
+	line-height: .9rem;
+}
+
+	.container__purple__paragraph {
+	line-height: 1rem;
+	padding: .5rem .5rem.5rem .4rem;
+	color: hsl(303, 10%, 85%);
+	}
+}

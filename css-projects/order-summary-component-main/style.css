@@ -1,0 +1,149 @@
+@font-face {
+	font-family: "Red Hat Display";
+	src: url(fonts/red-hat-display-v12-latin-500.woff);
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "Red Hat Display";
+	src: url(fonts/red-hat-display-v12-latin-700.woff);
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Red Hat Display";
+	src: url(fonts/red-hat-display-v12-latin-900.woff);
+	font-weight: 900;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Red Hat Display";
+	font-weight: 500;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	background: hsl(225, 100%, 94%) url(./images/pattern-background-desktop.svg);
+	background-repeat: no-repeat;
+	background-position: 0vh -30vh;
+}
+
+.container {
+	margin: auto;
+	background-color: white;
+	height: 29rem;
+	width: 18.7rem;
+	border-radius: 13px;
+	user-select: none;
+}
+
+.image {
+	background: url(./images/illustration-hero.svg);
+	background-repeat: no-repeat;
+	height: 31.7%;
+	border-radius: 13px 13px 0 0;
+	background-size: cover;
+}
+
+.description {
+	text-align: center;
+}
+
+.description p:first-child{
+	font-weight: 900;
+	font-size: 14pt;
+	margin: 1.9rem 0 0.8rem 0;
+}
+
+.description p:last-child{
+	font-size: 8pt;
+	line-height: 1.02rem;
+	padding: 0 2rem 1rem 2rem;
+	color: hsl(224, 23%, 55%);
+}
+
+.price {
+	position: relative;
+	margin: auto;
+	background-color: hsl(225, 100%, 98%);
+	width: 78%;
+	height: 14%;
+	border-radius: 10px;
+	margin-bottom: 1.3rem;
+	font-size: 9pt;
+}
+
+img{
+	width: 13.6%;
+	margin-top: 1rem;
+	margin-left: 0.9rem;	
+}
+
+.price p:nth-child(2) {
+	display: inline-block;
+	width: 50%;
+	margin-left: .5rem;
+	font-size: 8pt;
+	height: 100%;
+	transform: translateY(-3%);
+	line-height: 1.2rem;
+	color: hsl(224, 23%, 55%);
+}
+
+.price p:last-child {
+	position: absolute;
+	left: 78%;
+	bottom: 42.5%;
+	font-size: 7pt;
+	color: hsl(245, 75%, 52%);
+	font-weight: 700;
+	text-decoration-line: underline;
+}
+
+.price p:last-child:hover {
+	cursor: pointer;
+	text-decoration: none;
+	color: rgb(118, 108, 241);
+}
+
+span {
+	color: black;
+	font-weight: 700;
+}
+
+.button {
+	width: 79%;
+	height: 5.2%;
+	margin: auto;
+	background-color: hsl(245, 75%, 52%);
+	border: none;
+	border-radius: 7px;
+	text-align: center;
+	color: white;
+	margin-bottom: 1rem;
+	font-size: 7.5pt;
+	font-weight: 700;
+	padding-top: 3.2%;
+	margin-bottom: 1.3rem;
+	box-shadow: 0 10px 10px 5px hsl(225, 100%, 94%);
+}
+
+.button:hover {
+	background-color: rgb(118, 108, 241);
+	cursor: pointer;
+}
+
+.cancel {
+	text-align: center;
+	font-size: 7.7pt;
+	font-weight: 700;
+	color: hsl(224, 23%, 55%);
+}
+
+.cancel:hover {
+	color: black;
+	cursor: pointer;
+}

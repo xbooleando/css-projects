@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/2d8540c94a.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="pantallaDeLogin.css">
+	<title>Login</title>
+</head>
+<body>
+	<div class="form-container">
+		<div class="login-container">
+			<h2>Bienvenido</h2>
+			<p>Selecciona el método de autenticación</p>
+			<form action="">
+				<p>
+					<label for="username">username</label>
+					<input type="text" name="username" id="username" class="input">
+				</p>
+				<p>
+					<label for="password">password</label>
+					<input type="password" name="password" id="password" class="input">
+				</p>
+				<div class="options">
+					<div>
+						Remember me
+						<input type="checkbox" name="rememberme" id="rememberme">
+					</div>
+					<div>
+						<a href="#">Forgot my password</a>
+					</div>
+				</div>
+				<p>
+					<input type="submit" class="btn btn-login" value="Iniciar sesión">
+				</p>
+				<div class="providers">
+					<span>O inicie sesión con:</span>
+					<button class="btn btn-google">
+						<span class="fa-brands fa-google"></span>
+					</button>
+					<button class="btn btn-facebook">
+						<span class="fa-brands fa-facebook-f"></span>
+					</button>
+					<button class="btn btn-twitter">
+						<span class="fa-brands fa-twitter"></span>
+					</button>
+				</div>
+			</form>
+		</div>
+		<div class="welcome-screen-container">
+		</div>
+	</div>
+</body>
+</html>

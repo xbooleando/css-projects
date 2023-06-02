@@ -1,0 +1,74 @@
+:root {
+	--size: 150px;
+}
+
+body {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	display: flex;
+}
+
+.stories-container {
+	display: flex;
+	gap: 10px;
+	width: 700px;
+	margin: 100px auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.stories-container .outer-border {
+	background-color: black;
+	width: var(--size);
+	height: var(--size);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background: radial-gradient(
+		circle farthest-corner at 32% 106%, 
+		rgb(255, 225, 125) 0%, 
+		rgb(255, 205, 105) 10%,
+		rgb(250, 145, 55) 28%,
+		rgb(235, 65, 65) 42%,
+		transparent 82%
+	), linear-gradient(135deg, rgb(59, 100, 248) 12%, rgb(195, 60, 190) 58%)
+}
+
+.stories-container .outer-border .border {
+	background-color: white;
+	border-radius: 50%;
+	width: calc(var(--size) - 10px);
+	height: calc(var(--size) - 10px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.stories-container .outer-border .border a {
+	display: flex;
+	border-radius: 50%;
+	width: calc(var(--size) - 20px);
+	height: calc(var(--size)- 20px);
+}
+
+.stories-container .outer-border .border img {
+	width: calc(var(--size) - 20px);
+	height: calc(var(--size)- 20px);
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+.stories-container .story .name {
+	text-align: center;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: var(--size);
+	font-weight: 500;
+	font-size: 16px;
+	padding: 10px 0;
+}

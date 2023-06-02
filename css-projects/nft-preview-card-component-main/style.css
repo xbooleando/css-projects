@@ -1,0 +1,162 @@
+@font-face {
+	font-family: Outfit;
+	src: url(fonts/outfit-v5-latin-regular.woff);
+}
+
+@font-face {
+	font-family: Outfit;
+	src: url(fonts/outfit-v5-latin-300.woff);
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: Outfit;
+	src: url(fonts/outfit-v5-latin-600.woff);
+	font-weight: 600;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Outfit;
+}
+
+body {
+	display: flex;
+	background-color: hsl(217, 54%, 11%);
+	height: 100vh;
+}
+
+.container {
+	margin: auto;
+	position: relative;
+	padding: 15px;
+	background-color: hsl(216, 50%, 16%);
+	height: 25rem;
+	width: 15rem;
+	border-radius: 15px;
+	font-size: 11.2px;
+	color: hsl(215, 51%, 70%);
+	user-select: none;
+}
+
+.img {
+	margin: auto;
+	max-width: 13rem;
+	border-radius: 7px;
+}
+
+.img-cover {
+	display: flex;
+	position: absolute;
+	width: 13rem;
+	height: 13rem;
+	bottom: 11rem;
+	border-radius: 7px;
+	background-color: rgba(0, 255, 248, 0);
+	opacity: 0;
+}
+
+.img-cover:hover {
+	background-color: rgba(0, 255, 248, 0.5);
+	opacity: 1;
+	cursor: pointer;
+}
+
+.img-cover img {
+	margin: auto;
+}
+
+.title {
+	color: white;
+	margin: 0.8rem 0;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.title:hover {
+	color: #00fff8;
+	cursor: pointer;
+}
+
+.description {
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 1rem;
+}
+
+.info {
+	display: flex;
+	line-height: 2.8rem;
+}
+
+.price {
+	display: flex;
+	align-items: center;
+ 	margin-right: auto;
+	color: #00fff8;
+	font-weight: 600;
+}
+
+.time {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	font-size: 10.3px;
+}
+
+.ethereum-icon, .clock-icon {
+	max-height: .7rem;
+	padding-right: 5px;
+}
+
+.author {
+	display: flex;
+	align-items: center;
+	border-top: 1px solid hsl(215, 32%, 27%);
+	padding-top: 10px;
+	font-size: 10.3px;
+}
+
+.avatar {
+	max-width: 1.42rem; 
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+span {
+	color: white;
+	padding-left: 3px;
+}
+
+span:hover {
+	color: #00fff8;
+	cursor: pointer;
+}
+
+@media all and (max-width: 500px) {
+
+	.container {
+		width: 80%;
+		height: 125vw;
+		padding: 5%;
+		font-size: 80%;
+		line-height: 120%;
+	}
+
+	.description {
+		padding-right: 5px;
+	}
+
+	.img {
+		max-width: 100%;
+	}
+
+	.img-cover {
+		top: 4%;
+		width: 88%;
+		height: 56%;
+	}
+}

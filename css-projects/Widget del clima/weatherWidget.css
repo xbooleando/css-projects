@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+}
+
+.weather-container {
+	width: 450px;
+	margin: 100px auto;
+	background-color: #333;
+	color: white;
+	padding: 10px;
+	border-radius: 50px;
+}
+
+.weather-container .current {
+	background: rgb(30, 107, 221);
+	background: linear-gradient(
+		0deg, 
+		rgb(30, 107, 221) 0%, 
+		rgb(3, 11, 255) 43%, 
+		rgb(3, 191, 255) 100%
+	);
+	border-radius: 40px;
+	padding: 40px;
+}
+
+.weather-container .current .city {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+.weather-container .current .day {
+	text-align: center;
+}
+
+.weather-container .current .row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.weather-container .current .row .icon img {
+	width: 128px;
+}
+
+.weather-container .current .row .info .temperature {
+	font-size: 48px;
+	font-weight: bolder;
+	display: flex;
+	align-items: center;
+}
+
+.weather-container .current .row .info .temperature .temperature-now {
+	font-size: 80px;
+	margin: 0;
+}
+
+.weather-container .current .row .info .temperature .temperature-low {
+	font-size: 32px;
+	opacity: 0.6;
+}
+
+.weather-container .current .row .status {
+	text-align: center;
+	opacity: 0.8;
+}
+
+.weather-container .current .more {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	margin-top: 50px;
+}
+
+.weather-container .current .more .item {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.weather-container .current .more .item .icon span {
+	opacity: 0.8;
+	font-size: 20px;
+}
+
+.weather-container .current .more .item .text .type {
+	opacity: 0.8;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.weather-container .list {
+	display: flex;
+	flex-direction: column;
+	gap:20px;
+	padding: 40px 50px;
+}
+
+.weather-container .list .day {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.weather-container .list .day .name {
+	font-weight: bold;
+	width: 30px;
+}
+
+.weather-container .list .day .weather {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.weather-container .list .day .weather .status {
+	opacity: 0.6;
+	font-size: 12px;
+}
+
+.weather-container .list .day .temperature {
+	text-align: right;
+	display: flex;
+	gap: 5px;
+}
+
+.weather-container .list .day .temperature .temperature-low {
+	opacity: 0.6;
+}
